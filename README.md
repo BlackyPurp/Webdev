@@ -7,7 +7,7 @@ Webdev Project Build by Jason and Fatih.
 ## TODO:
 
  - 4 Individuelle Einzelseiten, welche Verlinkt sind:
-	 - [X ] Homepage
+	 - [ ] Homepage
 	 - [ ] Kombinatorik Erklaerung und Beispiele
 	 - [ ] Normalverteilung Erklaerung und Beispiele
 	 - [ ] Interaktive Tests von Thema 1 & 2
