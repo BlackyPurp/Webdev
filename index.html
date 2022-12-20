@@ -3,23 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>MatheHelps Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <header>
+    <header id="pageHead">
+      <h1 id="pageTitle">MatheHelps</h1>
+      <h2>Homepage</h2>
+      <!-- Logo needs to be created -->
+      <div id="pagelogo">Logo</div>
+      <img src="stock_study.jpg" id="backgroundPicture" alt="Person Studying">
+      <div id="headerText">Willkommen auf MatheHelps! Der Einzigartigen Webpage zum Lernen und verstehen von Mathe Oberstufen Themen.<br> Wir wollen euch helfen besser und effetktiver zu lernen.</div>
     </header>
-    <nav>
+    <nav id="navbar">
+      <div id="menuToggle">
+        <!-- Maybe add here a undermenu like Burgermenu -> Themen -> Then the topics -->
+        <!-- spans are added so we can later mag a Burgermenu with those -->
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+        <ul>
+          <li class="links"><a href="kombinatorik.html">Kombinatorik</a></li>
+          <li class="links"><a href="normalverteilung.html">Normalverteilung</a></li>
+       </ul>
+      </div>
     </nav>
     <main>
+      <div>Hey! Hier eine Kleine umfrage welche dir und deinen Klassenkameraden hilft uns diese Seite fuer euch zu Verbessern!</div><br>
+      <form>
+        <label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
+        <input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
+        <label for="umfrageThemen">Was ist dein Groesstes Hassthema in Mathematik momentan?</label><br>
+        <input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen"><br><br>
+        <!-- Double br to force one empty row -->
+        <input type="submit" value="Absenden">
+      </form>
     </main>
     <section>
+      <div>Weitere Themen sind Unterwegs! Schau ruhig oefter vorbei und bleib auf dem Laufenden, um dich in Mathe auch in anderen Themen immer zu verbessern!</div>
     </section>
-    <article>
-    </article>
-    <aside>
-    </aside>
-    <details>
-    </details>
     <footer>
+      <!-- Summary yes or no? -->
+      <details>
+        <summary>ContactInfo's</summary>
+        <div id="contactLink"><a href="contact.html">Kontakt & Feedback</a></div> 
+        <!-- extra page for Impressum or just add a summary for it? -->
+        <div id="impressumLink"><a href="impressum.html">Impressum</a></div>
+        <!-- Social Media text can be swapped out with Icons if available -->
+        <span id="socialmediaLinks"><a href="instagram.com">Instagram </a></span> <span><a href="twitter.com">Twitter</a></span>
+      </details>
     </footer>
   </body>
 </html>

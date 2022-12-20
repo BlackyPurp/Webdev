@@ -1,0 +1,10 @@
+#backgroundPicture{
+    /* Dimensions of picture need to be changed so they fit into the Mobile First Scheme */
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+}
+
+li{
+    list-style: none;
+}
