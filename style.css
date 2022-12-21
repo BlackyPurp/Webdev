@@ -1,5 +1,6 @@
 header {
   display: flex-end;
+  /* is this allowed? Wir sollten doch Grid verwenden fuer alles was nicht navbar ist */
 }
 
 header {
@@ -28,15 +29,43 @@ nav li:hover{
 
 
 #backgroundPicture{
-    /* Dimensions of picture need to be changed so they fit into the Mobile First Scheme */
-    width: 500px;
-    height: 500px;
-    z-index: -1;
+  /* Dimensions of picture need to be changed so they fit into the Mobile First Scheme */
+  background-image: url("math.jpg");
+  position: absolute;
+  object-fit: cover;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
 }
 
 li{
-    list-style: none;
+  list-style: none;
 }
+
+body{
+  display: grid;
+  grid-column: 1vw 1vw 1vw;
+}
+
+body div{
+  text-align: center;
+}
+
+#headerText{
+  margin-top: 5%;
+  margin-bottom: 20%;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  font-size: 240%;
+  text-shadow:
+      0.05em 0 black,
+      0 0.05em black,
+      -0.05em 0 black,
+      0 -0.05em black;
+
+  }
+  
 
 .inhaltsverzeichnisPunkt{
     list-style-type: disc;
