@@ -3,23 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title>Kombinatorik</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
+      <h1>Kombinatorik</h1>
+      <div id="inhaltsverzeichnis">
+        <h2>Inhaltsverzeichnis</h2>
+        <ul id="inhaltsverzeichnisAuflistung">
+          <li class="inhaltsverzeichnisPunkt">Allgemeines Zaehlerprinzip</li>
+          <li class="inhaltsverzeichnisPunkt">Permutationen</li>
+          <li class="inhaltsverzeichnisPunkt">Variationen</li>
+          <li class="inhaltsverzeichnisPunkt">Kombinationen</li>
+        </ul>
+      </div>
+      <nav id="navbar">
+        <div id="menuToggle">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+          <ul>
+            <li class="links"><a href="index.html">Homepage</a></li>
+            <li class="links"><a href="normalverteilung.html">Normalverteilung</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <nav>
-    </nav>
     <main>
+      <div>
+        Willkommen zur Seite ueber Kombinatorik! Die kombinatorik ist ein breit aufgebautes Feld der Mathematik welches sich mit der Berechnung von Anzahlen beschaeftigt.<br>
+        Du kannst dir Zur Erklaerung der Grundlagen der Kombinatorik das Video von Daniel Jung anschauen.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aHeqPnTyMI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+      </div>
     </main>
+    <section id="allgemeinesZaehlerprinzip">
+      <div>
+        <h2>Allgemeines Zaehlerprinzip</h2>
+        <div>Gegeben sind K mengen: m1...m2...m3k, welche jeweils n:n1...n2..nk elemente besitzen, dann lassen sich n1*n2*nk verschiedene k-Tupel zusammenstellen.</div><br>
+        <div>Ein Beispiel: Tim hat 5 T-Shirts, 3 Hosen und 2 paar socken.<br>Wie oft muss Tim sich umziehen, damit er mal alle moeglichen kombinationen von Shirts,Hosen und Socken anhatte?<br>Er kann Jeweils jedes Tshirt 5*<br> jede Hose 5*3* <br>jedes paar socken 5*3*2<br> = 30 Moegliche Outfits, welche Tim anprobieren kann.<br>
+        </div>
+        <div id="aufgabeZaehler1">
+          <br> 
+          <div>Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen fuer sein Outfit hinzufuegt, wieviele Moegliche Kombinationen waeren dann fuer ihn mogelich?
+          </div>
+          <!-- We can add more Questions later with JS, so that after checking the first one, you get access to another Question to this topic. Doing that will reduce the Clutter of an already very large website.-->
+          <form>
+            <input type="text" placeholder="Ergebnis">
+            <input type="button" value="Pruefen" id="aufgabeZaehler1Abgabe"> 
+          </form>
+        </div>
+      </div>
+    </section>
     <section>
+      <h2>Permutationen</h2>
+      <div>Eine Permutation ist eine K-Auswahl(spricht man waehlt k mal) aus einer n-menge. Jeodch gibt es bei der Permutation zwei verschiedene arten. Einmal Eine Permutation mit Wiederholung und eine ohne.
+      </div>
+      <h3>Permutation mit Wiederholung</h3>
+      <div>Eine Permutation mit Wiederholung ist eine anordnung von n objekte, von denen manche nicht unterscheidbar sind.</div>
     </section>
     <article>
     </article>
     <aside>
     </aside>
-    <details>
-    </details>
     <footer>
+      <details>
+        <summary>ContactInfo's</summary>
+        <div id="contactLink"><a href="contact.html">Kontakt & Feedback</a></div> 
+        <!-- extra page for Impressum or just add a summary for it? -->
+        <div id="impressumLink"><a href="impressum.html">Impressum</a></div>
+        <!-- Social Media text can be swapped out with Icons if available -->
+        <span id="socialmediaLinks"><a href="instagram.com">Instagram </a></span> <span><a href="twitter.com">Twitter</a></span>
+      </details>
     </footer>
   </body>
 </html>
