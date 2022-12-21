@@ -1,3 +1,32 @@
+header {
+  display: flex-end;
+}
+
+header {
+  background-color: #b3e5fc;
+  font-size: 1.7vw;
+  padding: 0px;
+}
+
+
+.links{
+  background: lightgrey;
+}
+
+nav {
+   float: right;
+   width: auto;
+}
+
+li {
+  display: inline-block;
+}
+
+nav li:hover{
+  background: white;
+}
+
+
 #backgroundPicture{
     /* Dimensions of picture need to be changed so they fit into the Mobile First Scheme */
     width: 500px;
