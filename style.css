@@ -63,7 +63,12 @@ body div{
       0 0.05em black,
       -0.05em 0 black,
       0 -0.05em black;
-
+     
+      /* backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.14);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125); */ */
   }
   
 

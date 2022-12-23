@@ -7,7 +7,7 @@ Webdev Project Build by Jason and Fatih.
 ## TODO:
 
  - 4 Individuelle Einzelseiten, welche Verlinkt sind:
-	 - [ ] Design Konzipierung und erstellung
+	 - [X] Design Konzipierung und erstellung
 	 - [ ] Homepage
 	 - [ ] Kombinatorik Erklaerung und Beispiele
 	 - [ ] Normalverteilung Erklaerung und Beispiele
@@ -18,10 +18,10 @@ Webdev Project Build by Jason and Fatih.
 	 - [ ] Mobile-First Ansatz
 	 - [ ] Klare trennung HTML / CSS
 	 - [ ] Kommentare im Quellcode
-	 - [ ]  Gesamtlayout CSS Grid
-	 - [ ]  Navbar mit CSS Flexbox
+	 - [ ] Gesamtlayout CSS Grid
+	 - [ ] Navbar mit CSS Flexbox
 	 - [ ] W3C Validiert
-	 - [ ] Nur ein Externes CSS-Stylesheet
+	 - [X] Nur ein Externes CSS-Stylesheet
 	 - [ ] Interaktive JS Anwendung
 
 - SEO und Soziale Medien
