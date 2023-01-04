@@ -1,32 +1,64 @@
+body{
+  background-color: red;
+}
 header {
   display: flex-end;
-  /* is this allowed? Wir sollten doch Grid verwenden fuer alles was nicht navbar ist */
-}
-
-header {
   background-color: #b3e5fc;
   font-size: 1.7vw;
   padding: 0px;
+  margin-right: -4%;
+  margin-left: -2%;
+  margin-top: -3%;
 }
-
-
 .links{
   background: lightgrey;
 }
 
 nav {
-   float: right;
-   width: auto;
-}
-
-li {
-  display: inline-block;
+  float: right;
+  width: auto;
 }
 
 nav li:hover{
   background: white;
 }
 
+li {
+  display: inline-block;
+  list-style: none;
+}
+body div{
+  text-align: center;
+}
+
+#navbar{
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(4, 0.5fr);
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#menuToggle input{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 140px;
+  top: 10px;
+  left: 35vw;
+  opacity: 1;
+}
 
 #backgroundPicture{
   /* Dimensions of picture need to be changed so they fit into the Mobile First Scheme */
@@ -34,21 +66,9 @@ nav li:hover{
   position: absolute;
   object-fit: cover;
   height: 50%;
-  width: 100%;
+  width: 102%;
   z-index: -1;
-}
-
-li{
-  list-style: none;
-}
-
-body{
-  display: grid;
-  grid-column: 1vw 1vw 1vw;
-}
-
-body div{
-  text-align: center;
+  margin-left: -2%;
 }
 
 #headerText{
@@ -57,21 +77,48 @@ body div{
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bolder;
-  font-size: 240%;
+  font-size: xx-large;
   text-shadow:
-      0.05em 0 black,
-      0 0.05em black,
-      -0.05em 0 black,
-      0 -0.05em black;
-     
-      /* backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(17, 25, 40, 0.14);
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.125); */ */
-  }
-  
+  0.05em 0 black,
+  0 0.05em black,
+  0 -0.05em 0 black,
+  0 -0.05em black;
+  /* backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125); */
+}
 
+#menuToggle input{
+  cursor: pointer;
+  top: 10px;
+  left: 35vw;
+  opacity: 1;
+}
+
+#menuToggle span{
+  display: block;
+  width: 35px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  left: 45vw;
+  top: -60px;
+}
+  
 .inhaltsverzeichnisPunkt{
     list-style-type: disc;
+  }
+@media(min-width: 720px) {
+  body{
+    display: grid;
+    grid-column: 1vw 1vw 1vw;
+    background-color: white;
+  }
+
+
 }
+
