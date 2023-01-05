@@ -122,3 +122,45 @@ body div{
 
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.3vw;
+  padding: 20px;
+  background-color: #1C1A1A;
+  color: white;
+  
+}
+
+.firstlink a,
+.socialmedialinks a {
+  color: white;
+}
+
+.firstlink {
+  grid-column: 1;
+}
+
+.socialmedialinks {
+  grid-column: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    font-size: 3vw;
+  }
+  .firstlink {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .socialmedialinks {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+
+
+
