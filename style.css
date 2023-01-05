@@ -129,7 +129,10 @@ body div{
   padding: 20px;
   background-color: #1C1A1A;
   color: white;
-  
+}
+
+.footer a:hover {
+  color: lightblue;
 }
 
 .firstlink a,
