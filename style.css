@@ -1,6 +1,6 @@
 body{
   display: grid;
-  background-color: red;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -9,7 +9,7 @@ body div{
   text-align: center;
 }
 
-header {
+header{
   display: flex-end;
   background-color: #3b8dad;
   font-size: 1.7vw;
@@ -53,25 +53,34 @@ nav {
 #linkmenu{
   position: absolute;
   padding: 0;
-  margin: 0;
-  margin-left: -20%;
-  background: rgba(255, 255, 255, 0.21);
+  margin-left: -25%;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.57);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.2px);
-  -webkit-backdrop-filter: blur(10.2px);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /*end of ccs.glass*/
   transform-origin: 0px 0px;
   transform: translate(0, -170%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  color: white;
-  text-decoration: none;
   transition: color 0.3s ease;
+  z-index: 1;
 }
 
 .links{
   list-style-type: none;
+  justify-content: space-around;
+  margin-bottom: 5%;
 }
+
+a, a:link, a:visited{
+  color: white;
+  text-shadow: #1C1A1A 10px;
+  text-decoration: none;
+}
+
 #menu input:checked ~ ul{
   transform: none;
 }
@@ -84,59 +93,140 @@ nav {
   margin: 5px 0;
 }
 
-#backgroundPicture{
-  /* Dimensions of picture need to be changed so they fit into the Mobile First Scheme */
-  background-image: url("math.jpg");
-  position: absolute;
-  object-fit: cover;
-  height: 60%;
-  width: 100%;
-  z-index: -1;
-  margin-top: -5%;
-}
-
 #headerText{
-  margin-top: 5%;
-  margin-bottom: 20%;
+  margin-bottom: 5%;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bolder;
   font-size: xx-large;
+  z-index: 1;
+  background-image: url("math.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-bottom: 10%;
   text-shadow:
   0.05em 0 black,
   0 0.05em black,
   0 -0.05em 0 black,
   0 -0.05em black;
-  /* backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.14);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+p{
+  margin: 0;
+  padding: 0;
 }
 
-.inhaltsverzeichnisPunkt{
-    list-style-type: disc;
-  }
+header > .logo{
+  margin-top: 15px;
+}
 
+#umfrage{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 12px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.3); 
+text-align: center;
+padding: 0;
+margin: 0;
+}
+#pageName{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+} 
+#inhaltsverzeichnis{
+  padding: 0;
+  margin: 0;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  text-align: left;
+  font-weight: light;
+}
+
+#bsp{
+  font-weight: bold;
+}
+.def{
+  font-weight: bold;
+}
+.definition{
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+}
+
+input[type=text]{
+  width: 300px;
+}
+input[type=button]{
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: left;
+}
 @media(min-width: 720px) {
   header{
-    margin-top: -1%;
-    margin-left: -1%;
-    margin-right: -0.5%;
+    margin: 0;
   }
   body{
     display: grid;
     grid-column: 1vw 1vw 1vw;
-    background-color: white;
+  }
+  .bar1,.bar2,.bar3{
+    display: none;
+  }
+  #headerText{
+    background-image: url("math.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div p{
+    padding: 0;
+    margin: 0;
   }
   #linkmenu{
-    display:none;
-  }
-  #links{
     display: flex;
-    flex-flow: row wrap;
+    top: 12%;
+    right: 10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
   }
-
+  .links{
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  a:hover{
+    color:#000000;
+  }
+  /* kombinatorik */
+  h2,h3{
+    text-align: center;
+  }
+  .definition{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+  }
 }
 
 .footer {

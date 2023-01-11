@@ -14,8 +14,6 @@
       <div id="navbar">
         <div id="menu">
           <input type="checkbox" id="navCheck">
-          <!-- Maybe add here a undermenu like Burgermenu -> Themen -> Then the topics -->
-          <!-- spans are added so we can later mag a Burgermenu with those -->
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -29,21 +27,20 @@
     </nav>    
     </header>
     <main id="maincontent">
-      <div id="pagelogo"></div>
-        <img src="math.jpg" id="backgroundPicture" alt="Person Studying">
-        <div id="headerText"><b>Willkommen auf MatheHelps! Der Einzigartigen Webpage zum Lernen und verstehen von Mathe Oberstufen Themen.<br> Wir wollen euch helfen besser und effetktiver zu lernen.</b></div>
-      <div>Hey! Hier eine Kleine umfrage welche dir und deinen Klassenkameraden hilft uns diese Seite fuer euch zu Verbessern!</div><br>
-      <form>
-        <label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
-        <input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
-        <label for="umfrageThemen">Was ist dein Groesstes Hassthema in Mathematik momentan?</label><br>
-        <input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen"><br><br>
-        <!-- Double br to force one empty row -->
-        <input type="submit" value="Absenden">
+      <div id="headerText"><p>Willkommen auf MatheHelps! Der Einzigartigen Webpage zum Lernen und verstehen von Mathe Oberstufen Themen.<br> Wir wollen euch helfen besser und effetktiver zu lernen.</p>
+      </div>
+        <form id="umfrage">
+          <div id="umfragentext">Hey! Hier eine Kleine umfrage welche dir und deinen Klassenkameraden hilft uns diese Seite fuer euch zu Verbessern!</div><br>
+          <label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
+          <input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
+          <label for="umfrageThemen">Was ist dein Groesstes Hassthema in Mathematik momentan?</label><br>
+          <input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen"><br><br>
+          <!-- Double br to force one empty row -->
+          <input type="submit" value="Absenden">
       </form>
     </main>
     <section id="moreTopics">
-      <div>Weitere Themen sind Unterwegs! Schau ruhig oefter vorbei und bleib auf dem Laufenden, um dich in Mathe auch in anderen Themen immer zu verbessern!</div>
+      <br><br><div>Weitere Themen sind Unterwegs! Schau ruhig oefter vorbei und bleib auf dem Laufenden, um dich in Mathe auch in anderen Themen immer zu verbessern!</div><br><br>
     </section>
       <footer class="footer">
         <div class="firstlink"><a href="contact.html">Kontakt</a>
