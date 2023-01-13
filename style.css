@@ -20,6 +20,12 @@ nav {
   float: right;
   width: auto;
 }
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 #navbar{
   display: flex;
   align-items: flex-end;
@@ -53,7 +59,8 @@ nav {
 #linkmenu{
   position: absolute;
   padding: 0;
-  margin-left: -25%;
+  margin: 0;
+  margin-left: -26%;
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.57);
   border-radius: 16px;
@@ -85,12 +92,18 @@ a, a:link, a:visited{
   transform: none;
 }
 .bar1, .bar2, .bar3 {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   width: 35px;
   height: 5px;
   background-color: #fff;
   margin: 5px 0;
+  justify-content: end;
+}
+
+#menu{
+  grid-column: 2;
+  grid-column-end: 2;
 }
 
 #headerText{
@@ -99,7 +112,6 @@ a, a:link, a:visited{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bolder;
   font-size: xx-large;
-  z-index: 1;
   background-image: url("math.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -110,14 +122,21 @@ a, a:link, a:visited{
   0 0.05em black,
   0 -0.05em 0 black,
   0 -0.05em black;
+  grid-column: 1 / span 4;
 }
+
+.logo{
+  margin-top: 10px;
+}
+
 p{
   margin: 0;
   padding: 0;
 }
 
 header > .logo{
-  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow:visible;
 }
 
 #umfrage{
@@ -131,7 +150,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 text-align: center;
 padding: 0;
 margin: 0;
+grid-column: 2 / span 2;
 }
+
 #pageName{
   text-align: center;
   padding: 0;
@@ -148,6 +169,11 @@ margin: 0;
   border: 1px solid rgba(0, 0, 0, 0.38);
   text-align: left;
   font-weight: light;
+  grid-column: 1 / span 5;
+}
+
+.inhaltsverzeichnisPunkt{
+  list-style-type:decimal;
 }
 
 #bsp{
@@ -163,8 +189,18 @@ margin: 0;
   background-color: lightblue;
 }
 
+.uebungen{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.uebungen > input[type=text]{
+  width: 150px;
+  grid-column: 2 / span 1;
+}
+
 input[type=text]{
-  width: 300px;
+  grid-column: 2 / span 1;
 }
 input[type=button]{
   border: 1px solid black;
@@ -179,13 +215,36 @@ h2{
 h3{
   text-align: left;
 }
+
+section{
+  display: grid;
+}
+
+#intro{
+  grid-column: 1 / span 4;
+}
+
+hr{
+  border: 0;
+  clear:both;
+  width: 96%;               
+  background-color: black;
+  height: 1px;
+}
+
+.inhalts,.inhalts:link,.inhalts:visited{
+  color: black;
+  text-shadow: #1C1A1A 10px;
+  text-decoration: underline;
+}
+
 @media(min-width: 720px) {
   header{
     margin: 0;
   }
   body{
     display: grid;
-    grid-column: 1vw 1vw 1vw;
+    grid-column: 1fr 1fr 1fr 1fr;
   }
   .bar1,.bar2,.bar3{
     display: none;
@@ -194,11 +253,19 @@ h3{
     background-image: url("math.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    grid-column: span 4;
   }
   div p{
     padding: 0;
     margin: 0;
   }
+
+  .inhaltsverzeichnisPunkt{
+    text-align: center;
+    list-style-type:decimal;
+    list-style-position:inside;
+  }
+
   #linkmenu{
     display: flex;
     top: 12%;
@@ -214,11 +281,11 @@ h3{
   .links{
     margin-left: 10px;
     margin-top: 15px;
+    margin-right: 10px;
   }
   a:hover{
     color:#000000;
   }
-  /* kombinatorik */
   h2,h3{
     text-align: center;
   }
@@ -227,6 +294,27 @@ h3{
     width: 100%;
     background-color: white;
   }
+  main{
+    display: grid;
+    grid-template: inherit;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #umfrage{
+    grid-column: 2 / span 2;
+  }
+  .uebungen{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .uebungen > input[type=text]{
+    width: auto;
+    grid-column: 2 / span 1;
+  }
+  .uebungen > input[type=button]{
+    grid-column: 3;
+    width: 100px;
+  }
+
 }
 
 .footer {
