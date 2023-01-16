@@ -293,6 +293,7 @@ hr{
     text-align: center;
     width: 100%;
     background-color: white;
+    width: 100%;
   }
   main{
     display: grid;
