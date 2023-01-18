@@ -60,7 +60,8 @@ main{
   position: absolute;
   padding: 0;
   margin: 0;
-  margin-left: -26%;
+  margin-left: -17%;
+  width: 30%;
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.57);
   border-radius: 16px;
@@ -176,6 +177,14 @@ grid-column: 2 / span 2;
   list-style-type:decimal;
 }
 
+#aufgabeAbsoluteHaeufigkeit1{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#else{
+  text-align: center;
+}
 #bsp{
   font-weight: bold;
 }
@@ -184,7 +193,8 @@ grid-column: 2 / span 2;
 }
 .definition{
   text-align: left;
-  padding: 10px;
+  padding: 0px;
+  padding-bottom: 10px;
   border: 1px solid lightblue;
   background-color: lightblue;
 }
@@ -237,6 +247,25 @@ hr{
   text-shadow: #1C1A1A 10px;
   text-decoration: underline;
 }
+
+header > .logo{
+  margin-top: 15px;
+}
+
+#umfrage{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+/* Kombinatorik Page */
+
+
+
 
 @media(min-width: 720px) {
   header{
@@ -316,6 +345,25 @@ hr{
     width: 100px;
   }
 
+  #linkmenu{
+    display: flex;
+    top: 12%;
+    right: 10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+  }
+  .links{
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  a:hover{
+    color:#000000;
+  }
 }
 
 .footer {

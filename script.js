@@ -150,5 +150,8 @@ function aufgaben(call){
             }
             break;
         }
+        case 5:{
+            break;
+        }
     }
 }
