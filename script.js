@@ -7,13 +7,42 @@ var currentErgebnisVari = 0;
 var currentQuestionKombi = 0;
 var currentErgebnisKombi = 0;
 
-function umfrageAbsenden(){
+function umfrageAbsenden() {
+  var requiredFields = document.querySelectorAll(".umfrage[required]");
+  var isValid = true;
+
+  for (var i = 0; i < requiredFields.length; i++) {
+    if (requiredFields[i].value === "") {
+      isValid = false;
+      break;
+    }
+  }
+
+  if (isValid){
     document.getElementById("umfrage").innerHTML = "Vielen dank fuer deine Antwort!";
     document.getElementById('umfrage').style.backgroundColor = 'green';
     document.getElementById('umfrage').style.gridColumn = "2 / span 2";
     document.getElementById('umfrage').style.marginTop = "40px";
     document.getElementById('umfrage').style.marginBottom = "40px";
-}
+}}
+function kontaktAbsenden() {
+  var requiredFields = document.querySelectorAll(".kontakt[required]");
+  var isValid = true;
+
+  for (var i = 0; i < requiredFields.length; i++) {
+    if (requiredFields[i].value === "") {
+      isValid = false;
+      break;
+    }
+  }
+
+  if (isValid){
+    document.getElementById("kontakt").innerHTML = "Vielen dank fuer deine Antwort!";
+    document.getElementById('kontakt').style.backgroundColor = 'green';
+    document.getElementById('kontakt').style.gridColumn = "2 / span 2";
+    document.getElementById('kontakt').style.marginTop = "40px";
+    document.getElementById('kontakt').style.marginBottom = "40px";
+}}
 
 function changeQuestionZaehler(correctness){
     var frage = [

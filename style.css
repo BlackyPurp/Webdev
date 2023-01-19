@@ -1,8 +1,13 @@
+html{
+  height: 100%;
+}
 body{
   display: grid;
+  grid: auto;
   background-color: white;
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 body div{
@@ -60,8 +65,7 @@ main{
   position: absolute;
   padding: 0;
   margin: 0;
-  margin-left: -17%;
-  width: 30%;
+  margin-left: -26%;
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.57);
   border-radius: 16px;
@@ -125,6 +129,24 @@ a, a:link, a:visited{
   0 -0.05em black;
   grid-column: 1 / span 4;
 }
+#KontaktText{
+  margin-bottom: 5%;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+  background-image: url("kontakt.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-bottom: 10%;
+  text-shadow:
+  0.05em 0 black,
+  0 0.05em black,
+  0 -0.05em 0 black,
+  0 -0.05em black;
+  grid-column: 1 / span 4;
+}
 
 .logo{
   margin-top: 10px;
@@ -149,9 +171,24 @@ backdrop-filter: blur(20px);
 -webkit-backdrop-filter: blur(20px);
 border: 1px solid rgba(255, 255, 255, 0.3); 
 text-align: center;
-padding: 0;
+padding: 15px;
 margin: 0;
 grid-column: 2 / span 2;
+}
+
+#kontakt{
+/* From https://css.glass */
+background: rgba(59, 141, 173, 0.4);
+border-radius: 12px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(59, 141, 173, 0.5); 
+text-align: center;
+padding: 15px;
+margin: 0;
+grid-column: 2 / span 2;
+width: 20em;
 }
 
 #pageName{
@@ -181,6 +218,7 @@ grid-column: 2 / span 2;
   padding-bottom: 10px;
   padding-top: 10px;
 }
+
 
 #else{
   text-align: center;
@@ -217,7 +255,17 @@ input[type=button]{
   background-color: white;
   border-radius: 20px;
 }
-
+[class=kontakt]{
+  grid-column: 2 / span 1;
+  margin: 4px;
+  border-style: none;
+  border-radius: 1em;
+  padding: 4px;
+  width: 250px;
+}
+textarea{
+  height: 80px;
+}
 h2{
   text-align: center;
 }
@@ -225,7 +273,6 @@ h2{
 h3{
   text-align: left;
 }
-
 section{
   display: grid;
 }
@@ -252,6 +299,39 @@ header > .logo{
   margin-top: 15px;
 }
 
+iframe{
+  width: 70%;
+}
+#moreTopics{
+  margin: 20px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 3vw;
+  padding: 20px;
+  background-color: #1C1A1A;
+  color: white;
+  margin-top: auto;
+}
+
+.footer a:hover {
+  color: lightblue;
+}
+
+.firstlink a,
+.socialmedialinks a {
+  color: white;
+}
+
+.firstlink {
+  grid-row: 1;
+}
+
+.socialmedialinks {
+  grid-row: 2;
+}
+
 #umfrage{
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
@@ -263,7 +343,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Kombinatorik Page */
-
 
 
 
@@ -284,6 +363,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     background-size: cover;
     grid-column: span 4;
   }
+  #KontaktText{
+    background-image: url("kontakt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 4;
+  }
+
   div p{
     padding: 0;
     margin: 0;
@@ -298,7 +384,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   #linkmenu{
     display: flex;
     top: 12%;
-    right: 13px;
+    right: 10px;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -332,6 +418,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   #umfrage{
     grid-column: 2 / span 2;
   }
+  #kontakt{
+    grid-column: 2 / span 2;
+    width: auto;
+  }
   .uebungen{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -343,6 +433,32 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   .uebungen > input[type=button]{
     grid-column: 3;
     width: 100px;
+  }
+  [class=kontakt]{
+    padding: 8px;
+    width: 300px;
+  }
+  .kontakt[type=text]{
+    width: 300px;
+  }
+  .kontakt[type=email]{
+    width: 300px;
+  }
+  textarea{
+    width: 300px;
+    height: 100px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.3vw;
+  }
+  .firstlink {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .socialmedialinks {
+    grid-row: 1;
+    grid-column: 2;
   }
 
   #linkmenu{
@@ -363,48 +479,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   }
   a:hover{
     color:#000000;
-  }
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.3vw;
-  padding: 20px;
-  background-color: #1C1A1A;
-  color: white;
-}
-
-.footer a:hover {
-  color: lightblue;
-}
-
-.firstlink a,
-.socialmedialinks a {
-  color: white;
-}
-
-.firstlink {
-  grid-column: 1;
-}
-
-.socialmedialinks {
-  grid-column: 2;
-}
-
-@media screen and (max-width: 500px) {
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    font-size: 3vw;
-  }
-  .firstlink {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .socialmedialinks {
-    grid-column: 1;
-    grid-row: 2;
   }
 }
 
