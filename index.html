@@ -33,8 +33,9 @@
           <div id="umfragentext">Hey! Hier eine Kleine umfrage welche dir und deinen Klassenkameraden hilft uns diese Seite fuer euch zu Verbessern!</div><br>
           <label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
           <input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
-          <label for="umfrageThemen">Was ist dein Groesstes Hassthema in Mathematik momentan?</label><br>
-          <input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen"><br><br>
+          <label for="umfrageThemen">*Was ist dein Groesstes Hassthema in Mathematik momentan?</label><br>
+          <input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen" required><br><br>
+            <option value="" disabled selected hidden>Bitte Auswählen</option>
           <!-- Double br to force one empty row -->
           <input type="submit" value="Absenden" onclick="umfrageAbsenden()">
       </form>
