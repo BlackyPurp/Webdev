@@ -8,25 +8,25 @@ Webdev Project Build by Jason and Fatih.
 
  - 4 Individuelle Einzelseiten, welche Verlinkt sind:
 	 - [X] Design Konzipierung und erstellung
-	 - [ ] Homepage
-	 - [ ] Kombinatorik Erklaerung und Beispiele
-	 - [ ] Normalverteilung Erklaerung und Beispiele
-	 - [ ] Interaktive Tests von Thema 1 & 2
-	 - [ ] Contact & Feedback
+	 - [X] Homepage
+	 - [X] Kombinatorik Erklaerung und Beispiele
+	 - [X] Haeufigkeit Erklaerung und Beispiele
+	 - [X] Interaktive Tests von Thema 1 & 2 (On Page)
+	 - [X] Contact & Feedback
 
  - Responsives Webdesign:
-	 - [ ] Mobile-First Ansatz
-	 - [ ] Klare trennung HTML / CSS
-	 - [ ] Kommentare im Quellcode
-	 - [ ] Gesamtlayout CSS Grid
-	 - [ ] Navbar mit CSS Flexbox
+	 - [X] Mobile-First Ansatz
+	 - [X] Klare trennung HTML / CSS
+	 - [X] Kommentare im Quellcode
+	 - [X] Gesamtlayout CSS Grid
+	 - [X] Navbar mit CSS Flexbox
 	 - [ ] W3C Validiert
 	 - [X] Nur ein Externes CSS-Stylesheet
-	 - [ ] Interaktive JS Anwendung
+	 - [X] Interaktive JS Anwendung
 
 - SEO und Soziale Medien
 	 - [ ] Title und SEO meta Tags  	
-	 - [ ] alt-Attrtibute 	
+	 - [X] alt-Attrtibute 	
 	 - [ ] Favicon
 
 	
