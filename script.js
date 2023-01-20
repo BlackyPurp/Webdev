@@ -6,6 +6,11 @@ var currentQuestionVari = 0;
 var currentErgebnisVari = 0;
 var currentQuestionKombi = 0;
 var currentErgebnisKombi = 0;
+var currentQuestionRHaeufig = 0;
+var currentErgebnisRHaeufig = 0;
+var currentQuestionAHaeufig = 0;
+var currentErgebnisAHaeufig = 0;
+
 
 function umfrageAbsenden() {
   var requiredFields = document.querySelectorAll(".umfrage[required]");
@@ -108,6 +113,38 @@ function changeQuestionKombi(correctness){
     }
 }
 
+function changeQuestionRHaeufig(correctness){
+    var frage = [
+        "Wir werfen 100x eine Muenze, Berechne, mithilfe folgender Tabelle die relative Häufigkeit fuer Kopf in Prozent.(Ohne % Zeichen)",
+        "Das wars mit den Fragen zur Relativen Haeufigkeit! Super Gemacht!"
+    ];
+    if(correctness){
+        currentQuestionRHaeufig++;
+        document.getElementById("aufgabeRHaeufigAB").innerHTML = frage[currentQuestionRHaeufig];
+        document.getElementById("aufgabeRHaeufigAB").style.backgroundColor = 'white';
+    }else{
+        document.getElementById("aufgabeRHaeufig").innerHTML = frage[currentQuestionRHaeufig];
+        document.getElementById("aufgabeRHaeufig").style.backgroundColor = "white";
+    }
+}
+
+function changeQuestionAHaeufig(correctness){
+    var frage = [
+        "Eine Muenze wurde 200x geworfen, in 60% der Faelle lag Kopf oben, Wie oft lag kopf oben?",
+        "Das wars mit den Fragen zur Absoluten Haeufigkeit! Super Gemacht!"
+    ];
+    if(correctness){
+        currentQuestionAHaeufig++;
+        document.getElementById("aufgabeAHaeufig").innerHTML = frage[currentQuestionAHaeufig];
+        document.getElementById("aufgabeAHaeufig").style.backgroundColor = 'white';
+    }else{
+        document.getElementById("aufgabeAHaeufig").innerHTML = frage[currentQuestionAHaeufig];
+        document.getElementById("aufgabeAHaeufig").style.backgroundColor = "white";
+    }
+}
+
+
+
 function aufgaben(call){
     switch(call){
         case 1:{
@@ -180,6 +217,37 @@ function aufgaben(call){
             break;
         }
         case 5:{
+            var ergebnisCheckRHaufig = ["48"];
+            if(currentErgebnisRHaeufig == 1){
+                return;
+            }
+            if(document.getElementById("ergebnisRelativeHaeufigkeit").value == ergebnisCheckRHaufig[currentErgebnisRHaeufig]){
+                document.getElementById("aufgabeRHaeufigAB").innerHTML = "Richtig!";
+                document.getElementById("aufgabeRHaeufigAB").style.backgroundColor = "green";
+                setTimeout(changeQuestionRHaeufig,3000,true);
+                currentErgebnisRHaeufig++;
+            }else{
+                document.getElementById("aufgabeRHaeufig").innerHTML = "Leider Falsch, versuch's nochmal";
+                document.getElementById("aufgabeRHaeufig").style.backgroundColor = "red";
+                setTimeout(changeQuestionRHaeufig,3000,false);
+            }
+            break;
+        }
+        case 6:{
+            var ergebnisCheckAHaufig = ["120"];
+            if(currentErgebnisAHaeufig == 1){
+                return;
+            }
+            if(document.getElementById("ergebnisAbso").value == ergebnisCheckAHaufig[currentErgebnisAHaeufig]){
+                document.getElementById("aufgabeAHaeufig").innerHTML = "Richtig!";
+                document.getElementById("aufgabeAHaeufig").style.backgroundColor = "green";
+                setTimeout(changeQuestionAHaeufig,3000,true);
+                currentErgebnisAHaeufig++;
+            }else{
+                document.getElementById("aufgabeAHaeufig").innerHTML = "Leider Falsch, versuch's nochmal";
+                document.getElementById("aufgabeAHaeufig").style.backgroundColor = "red";
+                setTimeout(changeQuestionAHaeufig,3000,false);
+            }
             break;
         }
     }
