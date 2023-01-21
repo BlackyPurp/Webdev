@@ -166,7 +166,7 @@ a, a:link, a:visited{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bolder;
   font-size: xx-large;
-  background-image: url("impressum.jpg");
+  background-image: url("test.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -460,7 +460,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     grid-column: span 4;
   }
   #ImpressumText{
-    background-image: url("impressum.jpg");
+    background-image: url("test.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: span 4;
