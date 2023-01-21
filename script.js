@@ -1,15 +1,15 @@
-var currentQuestionZaehler = 0;
-var currentErgebnisZaehler = 0;
+var currentQuestionZähler = 0;
+var currentErgebnisZähler = 0;
 var currentQuestionPermut = 0;
 var currentErgebnisPermut = 0;
 var currentQuestionVari = 0;
 var currentErgebnisVari = 0;
 var currentQuestionKombi = 0;
 var currentErgebnisKombi = 0;
-var currentQuestionRHaeufig = 0;
-var currentErgebnisRHaeufig = 0;
-var currentQuestionAHaeufig = 0;
-var currentErgebnisAHaeufig = 0;
+var currentQuestionRHäufig = 0;
+var currentErgebnisRHäufig = 0;
+var currentQuestionAHäufig = 0;
+var currentErgebnisAHäufig = 0;
 
 
 function umfrageAbsenden() {
@@ -24,7 +24,7 @@ function umfrageAbsenden() {
   }
 
   if (isValid){
-    document.getElementById("umfrage").innerHTML = "Vielen dank fuer deine Antwort!";
+    document.getElementById("umfrage").innerHTML = "Vielen dank für deine Antwort!";
     document.getElementById('umfrage').style.backgroundColor = 'green';
     document.getElementById('umfrage').style.gridColumn = "2 / span 2";
     document.getElementById('umfrage').style.marginTop = "40px";
@@ -49,97 +49,97 @@ function kontaktAbsenden() {
     document.getElementById('kontakt').style.marginBottom = "40px";
 }}
 
-function changeQuestionZaehler(correctness){
+function changeQuestionZähler(correctness){
     var frage = [
-        "Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen fuer sein Outfit hinzufuegt, wieviele Moegliche Kombinationen waeren dann fuer ihn mogelich?",
-        "Wenn Tim sich nun dazu entscheidet, keine jacken mehr anzuziehen und dafuer 5 Pullies kauft, wie viele Kombinationen waeren nun moeglich?",
-        "Das wars mit den Fragen zum Allgemeinen Zaehlerprinzip! Super Gemacht!"
+        "Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen für sein Outfit hinzufügt, wieviele Mögliche Kombinationen wären dann für ihn möglich?",
+        "Wenn Tim sich nun dazu entscheidet, keine jacken mehr anzuziehen und dafür 5 Pullies kauft, wie viele Kombinationen wären nun möglich?",
+        "Das wars mit den Fragen zum Allgemeinen Zählerprinzip! Super Gemacht!"
     ];
     if(correctness){
-        currentQuestionZaehler++;
-        document.getElementById("aufgabeZaehler").innerHTML = frage[currentQuestionZaehler];
-        document.getElementById("aufgabeZaehler").style.backgroundColor = 'white';
+        currentQuestionZähler++;
+        document.getElementById("aufgabeZähler").innerHTML = frage[currentQuestionZähler];
+        document.getElementById("aufgabeZähler").style.backgroundColor = '#ededed';
     }else{
-        document.getElementById("aufgabeZaehler").innerHTML = frage[currentQuestionZaehler];
-        document.getElementById("aufgabeZaehler").style.backgroundColor = "white";
+        document.getElementById("aufgabeZähler").innerHTML = frage[currentQuestionZähler];
+        document.getElementById("aufgabeZähler").style.backgroundColor = "#ededed";
     }
 }
 
 function changeQuestionPermut(correctness){
     var frage = [
-        "Tim hat 5 Karten mit verschiedenen Bildern auf der Hand, wie viele Moeglichkeiten gibt es, die Karten in einer Reihe auf den Tisch zu legen?",
-        "Wenn Tim nun 5 Karten auf der Hand hat, von denen sich 2 nicht unterscheiden, wie viele Moeglichkeiten gibt es, die Karten in einer Reihe auf den Tisch zu legen?",
+        "Tim hat 5 Karten mit verschiedenen Bildern auf der Hand, wie viele Möglichkeiten gibt es, die Karten in einer Reihe auf den Tisch zu legen?",
+        "Wenn Tim nun 5 Karten auf der Hand hat, von denen sich 2 nicht unterscheiden, wie viele Möglichkeiten gibt es, die Karten in einer Reihe auf den Tisch zu legen?",
         "Das wars mit den Fragen zur Permutation! Super Gemacht!"
     ];
     if(correctness){
         currentQuestionPermut++;
         document.getElementById("aufgabePermut").innerHTML = frage[currentQuestionPermut];
-        document.getElementById("aufgabePermut").style.backgroundColor = 'white';
+        document.getElementById("aufgabePermut").style.backgroundColor = '#ededed';
     }else{
         document.getElementById("aufgabePermut").innerHTML = frage[currentQuestionPermut];
-        document.getElementById("aufgabePermut").style.backgroundColor = "white";
+        document.getElementById("aufgabePermut").style.backgroundColor = "#ededed";
     }
 }
 
 function changeQuestionVari(correctness){
     var frage = [
-        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten unter Beachtung der Reihenfolge und mit zuruecklegen gezogen werden. Wie viele moeglichkeiten gibt es?",
-        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten unter Beachtung der Reihenfolge und ohne zuruecklegen gezogen werden. Wie viele moeglichkeiten gibt es?",
+        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten unter Beachtung der Reihenfolge und mit zurücklegen gezogen werden. Wie viele möglichkeiten gibt es?",
+        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten unter Beachtung der Reihenfolge und ohne zurücklegen gezogen werden. Wie viele möglichkeiten gibt es?",
         "Das wars mit den Fragen zur Variation! Super Gemacht!"
     ];
     if(correctness){
         currentQuestionVari++;
         document.getElementById("aufgabeVar").innerHTML = frage[currentQuestionVari];
-        document.getElementById("aufgabeVar").style.backgroundColor = 'white';
+        document.getElementById("aufgabeVar").style.backgroundColor = '#ededed';
     }else{
         document.getElementById("aufgabeVar").innerHTML = frage[currentQuestionVari];
-        document.getElementById("aufgabeVar").style.backgroundColor = "white";
+        document.getElementById("aufgabeVar").style.backgroundColor = "#ededed";
     }
 }
 
 function changeQuestionKombi(correctness){
     var frage = [
-        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten ohne Beachtung der Reihenfolge und ohne zuruecklegen gezogen werden. Wie viele moeglichkeiten gibt es?",
-        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten ohne Beachtung der Reihenfolge und mit zuruecklegen gezogen werden. Wie viele moeglichkeiten gibt es?",
+        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten ohne Beachtung der Reihenfolge und ohne zurücklegen gezogen werden. Wie viele möglichkeiten gibt es?",
+        "Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten ohne Beachtung der Reihenfolge und mit zurücklegen gezogen werden. Wie viele möglichkeiten gibt es?",
         "Das wars mit den Fragen zur Kombination! Super Gemacht!"
     ];
     if(correctness){
         currentQuestionKombi++;
         document.getElementById("aufgabeKombi").innerHTML = frage[currentQuestionKombi];
-        document.getElementById("aufgabeKombi").style.backgroundColor = 'white';
+        document.getElementById("aufgabeKombi").style.backgroundColor = '#ededed';
     }else{
         document.getElementById("aufgabeKombi").innerHTML = frage[currentQuestionKombi];
-        document.getElementById("aufgabeKombi").style.backgroundColor = "white";
+        document.getElementById("aufgabeKombi").style.backgroundColor = "#ededed";
     }
 }
 
-function changeQuestionRHaeufig(correctness){
+function changeQuestionRHäufig(correctness){
     var frage = [
-        "Wir werfen 100x eine Muenze, Berechne, mithilfe folgender Tabelle die relative Häufigkeit fuer Kopf in Prozent.(Ohne % Zeichen)",
-        "Das wars mit den Fragen zur Relativen Haeufigkeit! Super Gemacht!"
+        "Wir werfen 100x eine Münze, Berechne, mithilfe folgender Tabelle die relative Häufigkeit für Kopf in Prozent.(Ohne % Zeichen)",
+        "Das wars mit den Fragen zur Relativen Häufigkeit! Super Gemacht!"
     ];
     if(correctness){
-        currentQuestionRHaeufig++;
-        document.getElementById("aufgabeRHaeufigAB").innerHTML = frage[currentQuestionRHaeufig];
-        document.getElementById("aufgabeRHaeufigAB").style.backgroundColor = 'white';
+        currentQuestionRHäufig++;
+        document.getElementById("aufgabeRHäufigAB").innerHTML = frage[currentQuestionRHäufig];
+        document.getElementById("aufgabeRHäufigAB").style.backgroundColor = '#ededed';
     }else{
-        document.getElementById("aufgabeRHaeufig").innerHTML = frage[currentQuestionRHaeufig];
-        document.getElementById("aufgabeRHaeufig").style.backgroundColor = "white";
+        document.getElementById("aufgabeRHäufig").innerHTML = frage[currentQuestionRHäufig];
+        document.getElementById("aufgabeRHäufig").style.backgroundColor = "#ededed";
     }
 }
 
-function changeQuestionAHaeufig(correctness){
+function changeQuestionAHäufig(correctness){
     var frage = [
-        "Eine Muenze wurde 200x geworfen, in 60% der Faelle lag Kopf oben, Wie oft lag kopf oben?",
-        "Das wars mit den Fragen zur Absoluten Haeufigkeit! Super Gemacht!"
+        "Eine Münze wurde 200x geworfen, in 60% der Fälle lag Kopf oben, Wie oft lag kopf oben?",
+        "Das wars mit den Fragen zur Absoluten Häufigkeit! Super Gemacht!"
     ];
     if(correctness){
-        currentQuestionAHaeufig++;
-        document.getElementById("aufgabeAHaeufig").innerHTML = frage[currentQuestionAHaeufig];
-        document.getElementById("aufgabeAHaeufig").style.backgroundColor = 'white';
+        currentQuestionAHäufig++;
+        document.getElementById("aufgabeAHäufig").innerHTML = frage[currentQuestionAHäufig];
+        document.getElementById("aufgabeAHäufig").style.backgroundColor = '#ededed';
     }else{
-        document.getElementById("aufgabeAHaeufig").innerHTML = frage[currentQuestionAHaeufig];
-        document.getElementById("aufgabeAHaeufig").style.backgroundColor = "white";
+        document.getElementById("aufgabeAHäufig").innerHTML = frage[currentQuestionAHäufig];
+        document.getElementById("aufgabeAHäufig").style.backgroundColor = "#ededed";
     }
 }
 
@@ -148,20 +148,20 @@ function changeQuestionAHaeufig(correctness){
 function aufgaben(call){
     switch(call){
         case 1:{
-            var ergebnisCheckZaehler = ["100","250"];
-            if(currentErgebnisZaehler == 2){
+            var ergebnisCheckZähler = ["100","250"];
+            if(currentErgebnisZähler == 2){
                 return;
             }
-            if(document.getElementById("ergebnisZaehler").value == ergebnisCheckZaehler[currentErgebnisZaehler]){
-                document.getElementById("aufgabeZaehler").innerHTML = "Richtig!";
-                document.getElementById("aufgabeZaehler").style.backgroundColor = "green";
-                document.getElementById("aufgabeZaehler").style.gridColumn = "2 / span 1";
-                setTimeout(changeQuestionZaehler,3000,true);
-                currentErgebnisZaehler++;
+            if(document.getElementById("ergebnisZähler").value == ergebnisCheckZähler[currentErgebnisZähler]){
+                document.getElementById("aufgabeZähler").innerHTML = "Richtig!";
+                document.getElementById("aufgabeZähler").style.backgroundColor = "green";
+                document.getElementById("aufgabeZähler").style.gridColumn = "2 / span 1";
+                setTimeout(changeQuestionZähler,3000,true);
+                currentErgebnisZähler++;
             }else{
-                document.getElementById("aufgabeZaehler").innerHTML = "Leider Falsch, versuch's nochmal";
-                document.getElementById("aufgabeZaehler").style.backgroundColor = "red";
-                setTimeout(changeQuestionZaehler,3000,false);
+                document.getElementById("aufgabeZähler").innerHTML = "Leider Falsch, versuch's nochmal";
+                document.getElementById("aufgabeZähler").style.backgroundColor = "red";
+                setTimeout(changeQuestionZähler,3000,false);
             }
             break;
         }
@@ -218,35 +218,35 @@ function aufgaben(call){
         }
         case 5:{
             var ergebnisCheckRHaufig = ["48"];
-            if(currentErgebnisRHaeufig == 1){
+            if(currentErgebnisRHäufig == 1){
                 return;
             }
-            if(document.getElementById("ergebnisRelativeHaeufigkeit").value == ergebnisCheckRHaufig[currentErgebnisRHaeufig]){
-                document.getElementById("aufgabeRHaeufigAB").innerHTML = "Richtig!";
-                document.getElementById("aufgabeRHaeufigAB").style.backgroundColor = "green";
-                setTimeout(changeQuestionRHaeufig,3000,true);
-                currentErgebnisRHaeufig++;
+            if(document.getElementById("ergebnisRelativeHäufigkeit").value == ergebnisCheckRHaufig[currentErgebnisRHäufig]){
+                document.getElementById("aufgabeRHäufigAB").innerHTML = "Richtig!";
+                document.getElementById("aufgabeRHäufigAB").style.backgroundColor = "green";
+                setTimeout(changeQuestionRHäufig,3000,true);
+                currentErgebnisRHäufig++;
             }else{
-                document.getElementById("aufgabeRHaeufig").innerHTML = "Leider Falsch, versuch's nochmal";
-                document.getElementById("aufgabeRHaeufig").style.backgroundColor = "red";
-                setTimeout(changeQuestionRHaeufig,3000,false);
+                document.getElementById("aufgabeRHäufig").innerHTML = "Leider Falsch, versuch's nochmal";
+                document.getElementById("aufgabeRHäufig").style.backgroundColor = "red";
+                setTimeout(changeQuestionRHäufig,3000,false);
             }
             break;
         }
         case 6:{
             var ergebnisCheckAHaufig = ["120"];
-            if(currentErgebnisAHaeufig == 1){
+            if(currentErgebnisAHäufig == 1){
                 return;
             }
-            if(document.getElementById("ergebnisAbso").value == ergebnisCheckAHaufig[currentErgebnisAHaeufig]){
-                document.getElementById("aufgabeAHaeufig").innerHTML = "Richtig!";
-                document.getElementById("aufgabeAHaeufig").style.backgroundColor = "green";
-                setTimeout(changeQuestionAHaeufig,3000,true);
-                currentErgebnisAHaeufig++;
+            if(document.getElementById("ergebnisAbso").value == ergebnisCheckAHaufig[currentErgebnisAHäufig]){
+                document.getElementById("aufgabeAHäufig").innerHTML = "Richtig!";
+                document.getElementById("aufgabeAHäufig").style.backgroundColor = "green";
+                setTimeout(changeQuestionAHäufig,3000,true);
+                currentErgebnisAHäufig++;
             }else{
-                document.getElementById("aufgabeAHaeufig").innerHTML = "Leider Falsch, versuch's nochmal";
-                document.getElementById("aufgabeAHaeufig").style.backgroundColor = "red";
-                setTimeout(changeQuestionAHaeufig,3000,false);
+                document.getElementById("aufgabeAHäufig").innerHTML = "Leider Falsch, versuch's nochmal";
+                document.getElementById("aufgabeAHäufig").style.backgroundColor = "red";
+                setTimeout(changeQuestionAHäufig,3000,false);
             }
             break;
         }

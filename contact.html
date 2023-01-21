@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <title>Kontakt</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name=”robots” content="index, follow">
+      <title>Kontakt mit MatheHelps</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="script.js"></script>
   </head>
   <body>
     <header id="pageHead">
-      <img class ="logo" src="logo_transparent.png" alt="logo" height="100px" width="100px">
+      <img class ="logo" src="logo_transparent.png" alt="logo">
     <nav>
       <div id="navbar">
         <div id="menu">
@@ -20,7 +23,7 @@
           <ul id="linkmenu">
             <li class="links"><a href="index.html">Homepage</a></li>
             <li class="links"><a href="kombinatorik.html">Kombinatorik</a></li>
-            <li class="links"><a href="haeufigkeit.html">Haeufigkeit</a></li>
+            <li class="links"><a href="häufigkeit.html">Häufigkeit</a></li>
         </ul>
         </div>
       </div>
@@ -38,13 +41,13 @@
             <option value="frau">Frau</option>
           </select><br>
           <label for="nachname">Nachname? *</label><br>
-          <input type="text" id="kontaktKlasse" class="kontakt" name="kontaktKlasse" placeholder="Mustermann" required><br>
+          <input type="text" id="nachname" class="kontakt" name="kontaktKlasse" placeholder="Mustermann" required><br>
           <label for="vorname">Vorname? *</label><br>
-          <input type="text" id="kontaktKlasse" class="kontakt" name="kontaktKlasse" placeholder="Max" required><br>
+          <input type="text" id="vorname" class="kontakt" name="kontaktKlasse" placeholder="Max" required><br>
           <label for="strasse">Straße?</label><br>
-          <input type="text" id="adresse" class="kontakt" name="adresse" placeholder="Mustermannstraße 1"><br>
+          <input type="text" id="strasse" class="kontakt" name="adresse" placeholder="Mustermannstraße 1"><br>
           <label for="ort">Postleitzahl & Wohnort?</label><br>
-          <input type="text" id="adresse" class="kontakt" name="adresse" placeholder="12345 Musterstadt"><br>
+          <input type="text" id="ort" class="kontakt" name="adresse" placeholder="12345 Musterstadt"><br>
           <label for="mail">E-Mail? *</label><br>
           <input type="email" id="mail" class="kontakt" name="mail" placeholder="mustermann@gmail.com" required><br>
           <label for="beschreibung">Beschreibung? *</label><br>
@@ -53,9 +56,8 @@
           <input type="submit" value="Absenden" onclick="kontaktAbsenden()"><br><br>
       </form>
     </main>
-    <section><br><br><div id="maps">Hier können sie uns finden!<br><br>
+    <br><br><div id="maps">Hier können sie uns finden!<br><br>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.879394587603!2d8.342767451328434!3d49.63451385359724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47962c744eee593f%3A0xa4bdccd4da0bde5!2sHochschule%20Worms!5e1!3m2!1sde!2sus!4v1622037434809!5m2!1sde!2sus" title="HS Worms Map"></iframe></div><br><br>
-    </section>
     <footer class="footer">
       <div class="firstlink">
         <a href="contact.html">Kontakt</a><br>

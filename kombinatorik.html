@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>MatheHelps Kombinatorik</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name=”robots” content="index, follow">
+    <title>MatheHelps Kombinatorik und alles drumherum!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="script.js"></script>
   </head>
   <body id="pageBod">
     <header id="pageHead">
-      <img class ="logo" src="logo_transparent.png" alt="logo" height="100px" width="100px">
+      <img class ="logo" src="logo_transparent.png" alt="logo">
       <nav>
         <div id="navbar">
           <div id="menu">
@@ -19,7 +22,7 @@
             <div class="bar3"></div>
             <ul id="linkmenuKombi">
               <li class="links"><a href="index.html">Homepage</a></li>
-              <li class="links"><a href="haeufigkeit.html">Haeufigkeit</a></li>
+              <li class="links"><a href="häufigkeit.html">Häufigkeit</a></li>
               <li class="links"><a href="contact.html">Kontakt</a></li>
             </ul>
           </div>
@@ -31,47 +34,48 @@
         <h1 id="pageName">Kombinatorik</h1>
         <h2>Inhaltsverzeichnis</h2>
         <ul id="inhaltsverzeichnisAuflistung">
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#Allgemeines Zaehlerprinzip">Allgemeines Zaehlerprinzip</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#Permutationen">Permutationen</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#Variationen">Variationen</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#Kombinationen">Kombinationen</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#tipsZumAbschluss">Tipps zum Abschluss</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#AllgemeinesZählerprinzipLink">Allgemeines Zählerprinzip</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#PermutationenLink">Permutationen</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#VariationenLink">Variationen</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#KombinationenLink">Kombinationen</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#tipsZumAbschlussLink">Tipps zum Abschluss</a></li>
         </ul>
       </div>
       <div id="intro">
-        <br>Willkommen zur Seite ueber Kombinatorik!<br><br> Die kombinatorik ist ein breit aufgebautes Feld der Mathematik welches sich mit der Berechnung von Anzahlen beschaeftigt.<br><br><br>
-        Du kannst dir Zur Erklaerung der Grundlagen der Kombinatorik das Video von Daniel Jung anschauen.<br><br>
-        <iframe class="video" width="350" height="250" src="https://www.youtube.com/embed/aHeqPnTyMI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <br>Willkommen zur Seite über Kombinatorik!<br><br> Die kombinatorik ist ein breit aufgebautes Feld der Mathematik welches sich mit der Berechnung von Anzahlen beschäftigt.<br><br><br>
+        Du kannst dir Zur Erklärung der Grundlagen der Kombinatorik das Video von Daniel Jung anschauen.<br><br>
+        <!-- iframe tag copied from Youtube Straight. -->
+        <iframe class="video" width="350" height="250" src="https://www.youtube.com/embed/aHeqPnTyMI0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
       </div>
     </main>
-    <section id="allgemeinesZaehlerprinzip">
-      <a name="Allgemeines Zaehlerprinzip"></a>
+    <section id="allgemeinesZählerprinzip">
+      <a id="AllgemeinesZählerprinzipLink"></a>
       <div>
         <hr>
-        <h2>1. Allgemeines Zaehlerprinzip</h2>
+        <h2>1. Allgemeines Zählerprinzip</h2>
         <div class="definition"><span class="def">Definition!</span><br>Gegeben sind K mengen: m1...m2...m3k, welche jeweils n:n1...n2..nk elemente besitzen, dann lassen sich n1*n2*nk verschiedene k-Tupel zusammenstellen.</div><br>
-        <div><span id="bsp">Ein Beispiel:</span> Tim hat 5 T-Shirts, 3 Hosen und 2 paar socken.<br>Wie oft muss Tim sich umziehen, damit er mal alle moeglichen kombinationen von Shirts,Hosen und Socken anhatte?<br><br>Er kann Jeweils jedes Tshirt 5*<br> jede Hose 5*3* <br>jedes paar socken 5*3*2<br> = 30 Moegliche Outfits, welche Tim anprobieren kann.
+        <div><span id="bsp">Ein Beispiel:</span> Tim hat 5 T-Shirts, 3 Hosen und 2 paar socken.<br>Wie oft muss Tim sich umziehen, damit er mal alle möglichen kombinationen von Shirts,Hosen und Socken anhatte?<br><br>Er kann Jeweils jedes Tshirt 5*<br> jede Hose 5*3* <br>jedes paar socken 5*3*2<br> = 30 Mögliche Outfits, welche Tim anprobieren kann.
         </div>
-        <h3>Uebungen zum Allgemeinem Zaehlerprinzip</h3>
-        <div id="aufgabeZaehler">
-          <div id="id="aufgabeZaehler1">Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen fuer sein Outfit hinzufuegt, wieviele Moegliche Kombinationen waeren dann fuer ihn mogelich?<br><br>
+        <h3>Übungen zum Allgemeinem Zählerprinzip</h3>
+        <div id="aufgabeZähler">
+          <div id="aufgabeZähler1">Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen für sein Outfit hinzufügt, wieviele Mögliche Kombinationen wären dann für ihn möglich?<br><br>
           </div>
           <!-- We can add more Questions later with JS, so that after checking the first one, you get access to another Question to this topic. Doing that will reduce the Clutter of an already very large website.-->
         </div>
       </div>
-      <form class="uebungen">
-        <input type="text" placeholder="Ergebnis" id="ergebnisZaehler"value="">
-        <input type="button" value="Pruefen" id="aufgabeZaehler1Abgabe" onclick="aufgaben(1)"> 
+      <form class="übungen">
+        <input type="text" placeholder="Ergebnis" id="ergebnisZähler">
+        <input type="button" value="Prüfen" id="aufgabeZähler1Abgabe" onclick="aufgaben(1)"> 
       </form>
     </section>
     <section id="Permutationen">
-      <a name="Permutationen"></a>
+      <a id="PermutationenLink"></a>
       <hr>
       <h2>2. Permutationen</h2>
-      <div class="definition"><span class="def">Definition!</span><br>Eine Permutation ist eine K-Auswahl(spricht man waehlt k mal) aus einer n-menge. Jeodch gibt es bei der Permutation zwei verschiedene arten. Einmal Eine Permutation mit Wiederholung und eine ohne.
+      <div class="definition"><span class="def">Definition!</span><br>Eine Permutation ist eine K-Auswahl(spricht man wählt k mal) aus einer n-menge. Jeodch gibt es bei der Permutation zwei verschiedene arten. Einmal Eine Permutation mit Wiederholung und eine ohne.
       </div>
       <h3>Permutation mit Wiederholung</h3>
-      <div>Eine Permutation mit Wiederholung ist eine anordnung von n objekte, von denen manche nicht unterscheidbar sind.<br>Formel hierfuer ist: </div>
+      <div>Eine Permutation mit Wiederholung ist eine anordnung von n objekte, von denen manche nicht unterscheidbar sind.<br>Formel hierfür ist: </div>
       <!-- mathML found on "Mathebibel.de" -->
       <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
         <mfrac>
@@ -95,28 +99,28 @@
         </mfrac>
       </math>
       <h3>Permutation ohne Wiederholung</h3>
-      <div>Eine Permutation ohne Wiederholung ist eine Anordung von n Objekten, welche nicht gleich sind.<br>Formel Hiefuer ist:</div>
+      <div>Eine Permutation ohne Wiederholung ist eine Anordung von n Objekten, welche nicht gleich sind.<br>Formel Hiefür ist:</div>
       <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
         <mi>n</mi>
         <mo>!</mo>
       </math><br>
-      <h3>Uebungen Zu Permutationen</h3>
+      <h3>Übungen Zu Permutationen</h3>
       <div id="aufgabePermut">
         <br>
-        <div>Tim hat 5 Karten mit verschiedenen Bildern auf der Hand, wie viele Moeglichkeiten gibt es, die Karten in einer Reihe auf den Tisch zu legen?</div>
+        <div>Tim hat 5 Karten mit verschiedenen Bildern auf der Hand, wie viele Möglichkeiten gibt es, die Karten in einer Reihe auf den Tisch zu legen?</div>
       </div>
-      <form class="uebungen">
+      <form class="übungen">
         <input type="text" placeholder="Ergebnis" id="ergebnisPermut">
-        <input type="button" value="Pruefen" id="aufgabePermutWid1" onclick="aufgaben(2)">
+        <input type="button" value="Prüfen" id="aufgabePermutWid1" onclick="aufgaben(2)">
       </form>
     </section>
     <section id="Variationen">
-      <a name="Variationen"></a>
+      <a id="VariationenLink"></a>
       <hr>
       <h2>3. Variationen</h2>
-      <div class="definition"><span class="def">Definition!</span><br>k auswahl aus n-menge -> es wird eine Stichprobe betrachtet.<br>Reihenfolge der Elemente wird beruecksichtigt -> "Geordnete Stichprobe"</div>
+      <div class="definition"><span class="def">Definition!</span><br>k auswahl aus n-menge -> es wird eine Stichprobe betrachtet.<br>Reihenfolge der Elemente wird berücksichtigt -> "Geordnete Stichprobe"</div>
       <h3>Variation ohne Wiederholung</h3>
-      <div>Bei einer Variation ohne Wiederholung werden k aus n Objekten unter beachtung der Reihenfolge ausgewaehlt, wobei jedes Objekt nur einmal ausgewaehlt werden kann.<br>Formel hierfuer ist:
+      <div>Bei einer Variation ohne Wiederholung werden k aus n Objekten unter beachtung der Reihenfolge ausgewählt, wobei jedes Objekt nur einmal ausgewählt werden kann.<br>Formel hierfür ist:
         <!-- Formel code found on Mathebibel.de -->
         <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
         <mfrac>
@@ -135,7 +139,7 @@
         </mfrac>
       </math></div>
       <h3>Variationen mit Wiederholung</h3>
-      <div>Bei einer Variaton mit Wiederholung werden k aus n Objekten under Beachtung der Reihenfolge ausgewaehlt, wobei Objekte auch mehrfach ausgewaehlt werden koennen. Formel hierfuer ist:</div>
+      <div>Bei einer Variaton mit Wiederholung werden k aus n Objekten under Beachtung der Reihenfolge ausgewählt, wobei Objekte auch mehrfach ausgewählt werden können. Formel hierfür ist:</div>
       <!-- Also found on Mathebibel.de -->
       <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
         <mi>n</mi>
@@ -151,23 +155,23 @@
           <mi>k</mi>
         </msup>
       </math><br>
-      <h3>Uebungen zur Variation</h3>
+      <h3>Übungen zur Variation</h3>
       <div id="aufgabeVar">
         <br>
-        <div>Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten unter Beachtung der Reihenfolge und mit zuruecklegen gezogen werden. Wie viele moeglichkeiten gibt es?<br></div>
+        <div>Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten unter Beachtung der Reihenfolge und mit zurücklegen gezogen werden. Wie viele möglichkeiten gibt es?<br></div>
       </div>
-      <form class="uebungen">
+      <form class="übungen">
         <input type="text" placeholder="Ergebnis" id="ergebnisVari">
-        <input type="button" value="Pruefen" id="aufgabeVariation" onclick="aufgaben(3)">
+        <input type="button" value="Prüfen" id="aufgabeVariation" onclick="aufgaben(3)">
       </form>
       </section>
       <section id="Kombinationen">
-        <a name="Kombinationen"></a>
+        <a id="KombinationenLink"></a>
         <hr>
         <h2>4. Kombinationen</h2>
-        <div class="definition"><span class="def">Definition!</span> auswahl aus n-menge -> es wird eine Stichprobe betrachtet.<br>Reihenfolge der Elemente wird nicht beruecksichtigt -> "Ungeordnete Stichprobe"</div>
+        <div class="definition"><span class="def">Definition!</span> auswahl aus n-menge -> es wird eine Stichprobe betrachtet.<br>Reihenfolge der Elemente wird nicht berücksichtigt -> "Ungeordnete Stichprobe"</div>
         <h3>Kombinationen ohne Wiederholung</h3>
-        <div>Bei einer Kombination ohne Wiederholung werden k aus n Objekten ohne Beachtung der Reihenfolge ausgewaehlt, wobei jedes Objekt nur einmal ausgewaehlt werden kann.Formel hierfuer: </div> 
+        <div>Bei einer Kombination ohne Wiederholung werden k aus n Objekten ohne Beachtung der Reihenfolge ausgewählt, wobei jedes Objekt nur einmal ausgewählt werden kann.Formel hierfür: </div> 
         <!-- Found on Mathebibel.de -->
         <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
           <mrow data-mjx-texclass="ORD">
@@ -186,7 +190,7 @@
           </mrow>
         </math>
         <h3>Kombination mit Wiederholung</h3>
-        <div>Bei einer Kombination mit Wiederholung werden k aus n Objekten ohne Beachtung der Reihenfolge ausgewaehlt, wobei Objekte auch mehrfrach ausgewaehlt werden koennen. Formel hierfuer: </div>
+        <div>Bei einer Kombination mit Wiederholung werden k aus n Objekten ohne Beachtung der Reihenfolge ausgewählt, wobei Objekte auch mehrfrach ausgewählt werden können. Formel hierfür: </div>
         <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
           <mrow data-mjx-texclass="ORD">
             <mrow data-mjx-texclass="ORD">
@@ -209,18 +213,18 @@
             </mrow>
           </mrow>
         </math>
-        <h3>Uebungen zu Kombination</h3>
+        <h3>Übungen zu Kombination</h3>
         <div>
           <br>
-          <div id="aufgabeKombi">Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten ohne Beachtung der Reihenfolge und ohne zuruecklegen gezogen werden. Wie viele moeglichkeiten gibt es?<br></div>
-          <form class="uebungen">
+          <div id="aufgabeKombi">Auf einem Tisch liegen 10 verschiedene karte. Es sollen 4 Karten ohne Beachtung der Reihenfolge und ohne zurücklegen gezogen werden. Wie viele möglichkeiten gibt es?<br></div>
+          <form class="übungen">
             <input type="text" placeholder="Ergebnis" id="ergebnisKombi">
-            <input type="button" value="Pruefen" id="aufgabeKombination" onclick="aufgaben(4)">
+            <input type="button" value="Prüfen" id="aufgabeKombination" onclick="aufgaben(4)">
           </form>
         </div>
       </section>
       <section id="tipsZumAbschluss">
-        <a name="tipsZumAbschluss"></a>
+        <a id="tipsZumAbschlussLink"></a>
         <hr>
         <h2>5. Tipps zum Abschluss</h2>
         <div class="definition">Da es meistens nicht in der Aufgabe genannt ist, welcher fall nun vorliegt, gibt es ein kleines Schema nachdem man sich orientieren kann um herauszufinden, welche der Formeln nun anzuwenden ist.<br></div>
@@ -228,10 +232,6 @@
         <div><h3>Alle Elemente der Grundmenge für die Aufgabe relevant?</h3>NEIN-> Variaton oder Kombination<br><h3>Reihenfolge ist zu berücksichtigen?</h3>JA -> Variation<br><h3>Elemente unterscheidbar? Ohne Wiederholung? Ohne Zurücklegen?</h3>JA -> Variation ohne Wiederholung<br>NEIN -> Variation mit Wiederholung</div>
         <div><h3>Reihenfolge ist zu berücksichtigen?</h3>NEIN -> Kombination<br><h3>Elemente unterscheidbar? Ohne Wiederholung? Ohne Zurücklegen?</h3>JA -> Kombination ohne Wiederholung.<br> NEIN -> Kombination mit Wiederholung</div>
       </section>
-    <article>
-    </article>
-    <aside>
-    </aside>
     <footer class="footer">
       <div class="firstlink">
         <a href="contact.html">Kontakt</a><br>

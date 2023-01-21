@@ -1,7 +1,7 @@
 # Webdev
 
 Webdev Project Build by Jason and Fatih.
-
+Current Topic Follows a Page Themed to help Students with some Mathmatic Themes, while also letting them try out learned information on page.
   
 
 ## TODO:
@@ -20,13 +20,14 @@ Webdev Project Build by Jason and Fatih.
 	 - [X] Kommentare im Quellcode
 	 - [X] Gesamtlayout CSS Grid
 	 - [X] Navbar mit CSS Flexbox
-	 - [ ] W3C Validiert
+	 - [X] W3C Validiert
 	 - [X] Nur ein Externes CSS-Stylesheet
 	 - [X] Interaktive JS Anwendung
 
 - SEO und Soziale Medien
-	 - [ ] Title und SEO meta Tags  	
+	 - [X] Title und SEO meta Tags  	
 	 - [X] alt-Attrtibute 	
-	 - [ ] Favicon
+	 - [X] Favicon
+	 - [X] Added social media links to actual accounts
 
 	

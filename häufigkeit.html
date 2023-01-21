@@ -1,17 +1,20 @@
 <!-- any MathML elements are found and edited from Mathebibel.de, all credits for the formular display goes to them. -->
 
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>MatheHelps Kombinatorik</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name=”robots” content="index, follow">
+    <title>MatheHelps Relative und Absolute Häufigkeit</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="script.js"></script>
   </head>
   <body id="pageBod">
     <header id="pageHead">
-      <img class ="logo" src="logo_transparent.png" alt="logo" height="100px" width="100px">
+      <img class ="logo" src="logo_transparent.png" alt="logo">
       <nav>
         <div id="navbar">
           <div id="menu">
@@ -30,26 +33,27 @@
     </header>
     <main>
       <div id="inhaltsverzeichnis">
-        <h1 id="pageName">Haeufigkeit</h1>
+        <h1 id="pageName">Häufigkeit</h1>
         <h2>Inhaltsverzeichnis</h2>
         <ul id="inhaltsverzeichnisAuflistung">
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#Definition der Haeufigkeit">Definition</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#berechnen der r.haeufigkeit">Relative Haeufigkeit berechnen</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#Eigenschaften">Eigenschaften</a></li>
-          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#berechnen der a.haeufigkeit">Absolute Haeufigkeit berechnen</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#definitionderHäufigkeitLink">Definition</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#berechnenDerR.HäufigkeitLink">Relative Häufigkeit berechnen</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#eigenschaftenLink">Eigenschaften</a></li>
+          <li class="inhaltsverzeichnisPunkt"><a class="inhalts" href="#berechnenDerA.HäufigkeitLink">Absolute Häufigkeit berechnen</a></li>
         </ul>
       </div>
       <div id="intro">
-        <br>Willkommen zur Seite ueber Absolute / Relative Haeufigkeit!<br><br> Die Haeufigkeit ist das Feld der Mathematik welches sich mit der Berechnung der Haeufigkeitsverteilung von bestimmten Ereignissen Beschaefftigt.<br><br><br>
-        Du kannst dir Zur Erklaerung der Grundlagen der Haeufigkeit das Video von Daniel Jung anschauen.<br><br>
-        <iframe class="video" width="350" height="250" src="https://www.youtube.com/embed/kIZ9-mGbuN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+        <br>Willkommen zur Seite über Absolute / Relative Häufigkeit!<br><br> Die Häufigkeit ist das Feld der Mathematik welches sich mit der Berechnung der Häufigkeitsverteilung von bestimmten Ereignissen Beschäfftigt.<br><br><br>
+        Du kannst dir Zur Erklärung der Grundlagen der Häufigkeit das Video von Daniel Jung anschauen.<br><br>
+        <!-- iframe tag copied from Youtube Straight. -->
+        <iframe class="video" width="350" height="250" src="https://www.youtube.com/embed/kIZ9-mGbuN8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
       </div>
     </main>
-    <section id="definition_haeufigkeit">
-      <a name="Definition der Haeufigkeit"></a>
+    <section id="definition_häufigkeit">
+      <a id="definitionderHäufigkeitLink"></a>
       <div>
         <hr>
-        <h2>1. Definition der Haeufigkeit</h2>
+        <h2>1. Definition der Häufigkeit</h2>
         <div class="definition"><span class="def">Definition!</span><br>Tritt ein Ereignis bei n-Versuchen k-mal ein, so heißt die Zahl:
           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
             <msub>
@@ -69,10 +73,10 @@
         <br>
       </div>
     </section>
-    <section id="relative_haeufigkeit_berechnen">
-      <a name="berechnen der r.haeufigkeit"></a>
+    <section id="relative_häufigkeit_berechnen">
+      <a id="berechnenDerR.HäufigkeitLink"></a>
       <hr>
-      <h2>2. Berechnen der Relativen Haeufigkeit</h2>
+      <h2>2. Berechnen der Relativen Häufigkeit</h2>
       <div class="definition"><span class="def">Definition!</span><br>Die relative Häufigkeit ist die absolute Häufigkeit dividiert durch die Anzahl der Versuche:
         <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
           <mtext>Relative H&#xE4;ufigkeit</mtext>
@@ -106,10 +110,10 @@
           </mfrac>
         </math>
       </div>
-      <h3>Uebungen Zur Relativen Haeufigkeit</h3>
-      <div id="aufgabeRHaeufigAB">
+      <h3>Übungen Zur Relativen Häufigkeit</h3>
+      <div id="aufgabeRHäufigAB">
         <br>
-        <div id="aufgabeRHaeufig">Wir werfen 100x eine Muenze, Berechne, mithilfe folgender Tabelle die relative Haeufigkeit fuer Kopf in Prozent(Ohne % Zeichen).
+        <div id="aufgabeRHäufig">Wir werfen 100x eine Münze, Berechne, mithilfe folgender Tabelle die relative Häufigkeit für Kopf in Prozent(Ohne % Zeichen).
         </div>
         <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
           <mtable columnalign="right right" columnspacing="1em" rowspacing="4pt" columnlines="solid solid" rowlines="solid">
@@ -138,16 +142,16 @@
           </mtable>
         </math>
       </div>
-      <form class="uebungen">
-        <input type="text" placeholder="Ergebnis" id="ergebnisRelativeHaeufigkeit">
-        <input type="button" value="Pruefen" id="aufgabeRelHaeufigkeit1" onclick="aufgaben(5)">
+      <form class="übungen">
+        <input type="text" placeholder="Ergebnis" id="ergebnisRelativeHäufigkeit">
+        <input type="button" value="Prüfen" id="aufgabeRelHäufigkeit1" onclick="aufgaben(5)">
       </form>
     </section>
     <section id="eigenschaften">
-      <a name="Eigenschaften"></a>
+      <a id="eigenschaftenLink"></a>
       <hr>
       <h2>3. Eigenschaften</h2>
-      <div class="definition">Die Relative Haeufigkeit besitzt 6 verschiedene Eigenschaften.</div>
+      <div class="definition">Die Relative Häufigkeit besitzt 6 verschiedene Eigenschaften.</div>
       <br><div class="definition">Die relative Häufigkeit nimmt Werte zwischen 0 und 1 an:
         <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
         <mn>0</mn>
@@ -323,12 +327,11 @@
           <mo stretchy="false">)</mo>
         </math>
        </div><br>
-      </div>
     </section>
-    <section id="absolute_haeufigkeit_berechnen">
-        <a name="berechnen der a.haeufigkeit"></a>
+    <section id="absolute_häufigkeit_berechnen">
+        <a id="berechnenDerA.HäufigkeitLink"></a>
         <hr>
-        <h2>4. Absolute Haeufigkeit Berechnen</h2>
+        <h2>4. Absolute Häufigkeit Berechnen</h2>
         <div class="definition"><span class="def">Definition!</span> Die absolute Häufigkeit lässt sich aus der relativen Häufigkeit und der Anzahl der Versuche berechnen
           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
             <mtext>A H&#xE4;ufigkeit</mtext>
@@ -357,12 +360,12 @@
             <mi>n</mi>
           </math>
         </div>
-        <h3>Uebungen zum Berechnen der Absoluten Haeufigkeit</h3>
-        <div id="aufgabeAbsoluteHaeufigkeit1">
-          <div id="aufgabeAHaeufig">Eine Muenze wurde 200x geworfen, in 60% der Faelle lag Kopf oben, Wie oft lag kopf oben?</div><br>
-          <form class="uebungen">
+        <h3>Übungen zum Berechnen der Absoluten Häufigkeit</h3>
+        <div id="aufgabeAbsoluteHäufigkeit1">
+          <div id="aufgabeAHäufig">Eine Münze wurde 200x geworfen, in 60% der Fälle lag Kopf oben, Wie oft lag kopf oben?</div><br>
+          <form class="übungen">
             <input type="text" placeholder="Ergebnis" id="ergebnisAbso">
-            <input type="button" value="Pruefen" id="aufgabeAbso" onclick="aufgaben(6)">
+            <input type="button" value="Prüfen" id="aufgabeAbso" onclick="aufgaben(6)">
           </form>
         </div>
     </section>
