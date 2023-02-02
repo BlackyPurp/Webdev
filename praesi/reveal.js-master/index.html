@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>WebDev Projekt - Team Gardevoir</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="slide1" class="center">
+					<h2>Webdev Projekt</h2>
+					<h2>WiSe22/23 - Team Gardevoir</h2>
+					<p>Von Fatih Dorul und Jason Volz</p>
+				</section>
+
+				<section id="slide2">
+					<h4 class="title">Inhaltsverzeichnis</h4>
+					<ul>
+						<li>Design und Vorgehen</li>
+						<li>Functionality</li>
+						<li>Technische Umsetzung</li>
+						<li>Eigenleistung</li>
+						<li>Q&A Time</li>
+					</ul>
+				</section>
+
+
+
+				<section class="chapter center" id="slide3">
+					<h3>Vorgehensplanung und Designplanung</h3>
+				</section>
+
+				<section id="slide4">
+					<h3 class="title">Vorgehensplanung</h3>
+					<span>
+						<ul>
+							<li class="fragment fade-up">
+								Github Projekt
+								<img src="img/github.png">
+							</li>
+							<li class="fragment fade-up">
+								Planung mit Markdown fuer die README.md
+							</li>
+						</ul>
+						<iframe id="readme" class="fragment fade-up" src="fragments/README.html"></iframe>
+					</span>
+				</section>
+				
+				<section id="slide5">
+					<section id="slide5-1">
+						<h3 class="title">Erste Designs</h3>
+						<ul class="fragment fade-up">
+							<li>Grobe Designvorstellung, handgezeichnet und Gestyled</li>
+						</ul>
+						<div class="picholder"class="fragment fade-up">
+							<img class="sketch1" src="img/sketch1.png">
+							<img class="sketch2" src="img/sketch2.png">
+							<img class="sketch3" src="img/sketch3.png">
+						</div>
+					</section>
+				</section>
+
+				<section class="chapter center" id="slide6">
+					<h3>Functionality</h3>
+				</section>
+				
+				<section id="slide7" class="inbound">
+					<h3 class="title">Functionality - Navbar</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Burgermenu fuer Mobile View</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/index.html"></iframe>
+					</div>
+				</section>
+
+				<section id="slide8" class="inbound">
+					<h3 class="title">Functionality - Homepage</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Kurze und Praegnante Beschreibung des Pageinhaltes</li>
+							<li class="fragment fade-up">Umfrage fuer erweiterten Kontent</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/index.html"></iframe>
+					</div>
+				</section>
+
+				<section id="slide9" class="inbound">
+					<h3 class="title">Functionality - Footer</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Social Media Links</li>
+							<li class="fragment fade-up">Contact & Impressum</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/index.html"></iframe>
+					</div>
+				</section>
+
+				<section id="slide10" class="inbound">
+					<h3 class="title">Functionality - Info-Pages</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Jump Inhaltsverzeichnis zum Leichteren Navigieren</li>
+							<li class="fragment fade-up">YT-Video zur Visuellen erklaerung der Themen</li>
+							<li class="fragment fade-up">Fragen zum eben gelesenen Thema</li>
+							<li class="fragment fade-up">Pruefen der Answer und Laden einer neuen Frage</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/kombinatorik.html"></iframe>
+					</div>
+				</section>
+
+				<section id="slide11" class="inbound">
+					<h3 class="title">Functionality - Contact-Page</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Required Fields</li>
+							<li class="fragment fade-up">Drop-Down fuer Anrede</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/contact.html"></iframe>
+					</div>
+				</section>
+
+				<section id="slide12" class="inbound">
+					<h3 class="title">Functionality - Impressum-Page</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Ordentlich Aufgefuerter Rechtstext</li>
+							<li class="fragment fade-up">Gmail Adresse und Sitzangabe</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/impressum.html"></iframe>
+					</div>
+				</section>
+
+
+
+				<section class="chapter center" id="slide13">
+					<h3>Technische Umsetzung</h3>
+				</section>
+
+				<section id="slide14">
+					<h3 class="title">Flexbox Anwendungsfelder</h3>
+					<div class="grid">
+						<div>
+							<div id="navbartext">Navbar</div>
+							<img src="img/navbar.png">
+						</div>
+					</div>
+				</section>
+				
+				<section id="slide15">
+
+					<section id="slide15-1">
+						<h3 class="title">Code Beispiele - Navbar</h3>
+						<div class="grid">
+							<div>
+								<p>html</p>
+								<pre><code data-trim data-line-numbers>
+									<script type="text/template">
+										<nav>
+											<div id="navbar">
+												<div id="menu">
+													<input type="checkbox" id="navCheck">
+													<div class="bar1"></div>
+													<div class="bar2"></div>
+													<div class="bar3"></div>
+													<ul id="linkmenu">
+														<li class="links"><a href="kombinatorik.html">Kombinatorik</a></li>
+														<li class="links"><a href="häufigkeit.html">Häufigkeit</a></li>
+														<li class="links"><a href="contact.html">Kontakt</a></li>
+													</ul>
+												</div>
+											</div>
+										</nav>    
+									</script>
+								</code></pre>		
+							</div>
+							<div>
+								<p>css</p>
+								<pre><code data-trim data-line-numbers>
+									<script type="text/template">
+										#navbar{
+											display: flex;
+											align-items: flex-end;
+											height: 60px;
+											color: #fff;
+											font-size: 18px;
+											font-weight: bold;
+										  }
+									</script>
+								</code></pre>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section id="slide16">
+					<h3 class="title">CSS-Grid</h3>
+					<h4>Anwendungsfelder</h4>
+					<div class="grid">
+						<div class="picholder">
+							<div class="sketch1">Homepage Umfrage
+								<img src="img/umfrage.png">
+							</div>
+							<div class="sketch2">Info-Pages Fragefelder
+								<img src="img/answer.png">
+							</div>
+							<div class="sketch3">Contact Fomular
+								<img src="img/contact.png">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="slide17">
+					<h3 class="title">Code Beispiele - Homepage Umfrage</h3>
+					<div class="grid">
+						<div>
+							<p>html</p>
+							<pre><code data-trim data-line-numbers>
+								<script type="text/template">
+									<form id="umfrage">
+										<div id="umfragentext">Hey! Hier eine Kleine umfrage welche dir 
+											und deinen Klassenkameraden hilft uns diese Seite für euch zu Verbessern!</div><br>
+										<label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
+										<input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
+										<label for="umfrageThemen">*Was ist dein Grösstes Hassthema in Mathematik momentan?</label><br>
+										<input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen" required><br><br>
+										<input type="submit" value="Absenden" onclick="umfrageAbsenden()">
+									</form>
+								</script>
+							</code> </pre>
+						</div>
+						<div>
+							<p>css</p>
+							<pre><code data-trim data-line-numbers>
+								<script type="text/template">
+									#umfrage{
+										background: rgba(255, 255, 255, 0.2);
+										border-radius: 12px;
+										box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+										backdrop-filter: blur(20px);
+										-webkit-backdrop-filter: blur(20px);
+										border: 1px solid rgba(255, 255, 255, 0.3); 
+										text-align: center;
+										padding: 15px;
+										margin: 0;
+										grid-column: 2 / span 2;
+										}
+								</script>
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+
+
+				<section class="chapter center" id="slide18">
+					<h2>Eigenleistung</h2>
+				</section>
+
+				<section id="slide19">
+					<h3 class="title">Eigenleistung - Uebersicht</h3>
+					<ul>
+						<li class="fragment fade-up">Integriertes Lerntesten</li>
+						<li class="fragment fade-up">Umfrage fuer Neuen Content</li>
+					</ul>
+				</section>
+
+				<section id="slide20" class="inbound">
+					<h3 class="title">Eigenleistung - Integriertes Lerntesten</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Direkt bei den Fragen integriert</li>
+							<li class="fragment fade-up">Pruefen der richtigkeit der Antwort</li>
+							<li class="fragment fade-up">Laden neuer Fragen bei korrekter Antwort</li>
+							<li class="fragment fade-up">Overflow Schutz und annahme Stopp beim ende der Fragen</li>
+						</ul>
+						<iframe class="iframe-mobile" src="http://127.0.0.1:8000/kombinatorik.html"></iframe>
+					</div>
+				</section>
+				<section id="slide21" class="twoView">
+					<h3 class="title">Eigenleistung - Integriertes Lerntesten HTML/JS</h3>
+					<div>
+						<pre class="left"><code data-trim data-line-numbers="">
+							<script type="text/template">
+								<h3>Übungen zum Allgemeinem Zählerprinzip</h3>
+								<div id="aufgabeZähler">
+								  <div id="aufgabeZähler1">Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen für sein Outfit hinzufügt, wieviele Mögliche Kombinationen wären dann für ihn möglich?<br><br>
+								  </div>
+								</div>
+							  </div>
+							  <form class="übungen">
+								<input type="text" placeholder="Ergebnis" id="ergebnisZähler">
+								<input type="button" value="Prüfen" id="aufgabeZähler1Abgabe" onclick="aufgaben(1)"> 
+							  </form>
+							</script>
+						</code></pre>
+						<pre class="right"><code data-trim data-line-numbers="|1-5|7-10|20-22|24-29|">
+							<script type="text/template">
+								function changeQuestionZähler(correctness){
+									var frage = [
+										"Wenn Tim sich jetzt 2 neue Hosen und noch 2 Verschiedene Jacken zum Anziehen für sein Outfit hinzufügt, wieviele Mögliche Kombinationen wären dann für ihn möglich?",
+										"Wenn Tim sich nun dazu entscheidet, keine jacken mehr anzuziehen und dafür 5 Pullies kauft, wie viele Kombinationen wären nun möglich?",
+										"Das wars mit den Fragen zum Allgemeinen Zählerprinzip! Super Gemacht!"
+									];
+									if(correctness){
+										currentQuestionZähler++;
+										document.getElementById("aufgabeZähler").innerHTML = frage[currentQuestionZähler];
+										document.getElementById("aufgabeZähler").style.backgroundColor = '#ededed';
+									}else{
+										document.getElementById("aufgabeZähler").innerHTML = frage[currentQuestionZähler];
+										document.getElementById("aufgabeZähler").style.backgroundColor = "#ededed";
+									}
+								}
+
+								function aufgaben(call){
+									switch(call){
+										case 1:{
+											var ergebnisCheckZähler = ["100","250"];
+											if(currentErgebnisZähler == 2){
+												return;
+											}
+											if(document.getElementById("ergebnisZähler").value == ergebnisCheckZähler[currentErgebnisZähler]){
+												document.getElementById("aufgabeZähler").innerHTML = "Richtig!";
+												document.getElementById("aufgabeZähler").style.backgroundColor = "green";
+												document.getElementById("aufgabeZähler").style.gridColumn = "2 / span 1";
+												setTimeout(changeQuestionZähler,3000,true);
+												currentErgebnisZähler++;
+											}else{
+												document.getElementById("aufgabeZähler").innerHTML = "Leider Falsch, versuch's nochmal";
+												document.getElementById("aufgabeZähler").style.backgroundColor = "red";
+												setTimeout(changeQuestionZähler,3000,false);
+											}
+											break;
+										}
+							</script>
+						</code></pre>
+					</div>
+				</section>
+
+				<section id="slide22">
+					<h3 class="title">Eigenleistung - Umfrage</h3>
+					<div>
+						<ul>
+							<li class="fragment fade-up">Steigert den Wert der homepage</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="slide23" class="twoView">
+					<section id="slide23.1">
+						<h3 class="title">Eigenleistung - Umfrage html/css</h3>
+						<div>
+						<pre class="left codeblock"><code data-trim data-line-numbers>
+								<script type="text/template">
+									<form id="umfrage">
+										<div id="umfragentext">Hey! Hier eine Kleine umfrage welche dir und deinen Klassenkameraden hilft uns diese Seite für euch zu Verbessern!</div><br>
+										<label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
+										<input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
+										<label for="umfrageThemen">*Was ist dein Grösstes Hassthema in Mathematik momentan?</label><br>
+										<input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen" required><br><br>
+										<input type="submit" value="Absenden" onclick="umfrageAbsenden()">
+									</form>
+								</script>
+							</code></pre>
+							<pre class="right"><code data-trim data-line-numbers="|3-8|">
+								<script type="text/template">
+									#umfrage{
+										/* From https://css.glass */
+										background: rgba(255, 255, 255, 0.2);
+										border-radius: 12px;
+										box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+										backdrop-filter: blur(20px);
+										-webkit-backdrop-filter: blur(20px);
+										border: 1px solid rgba(255, 255, 255, 0.3); 
+										text-align: center;
+										padding: 15px;
+										margin: 0;
+										grid-column: 2 / span 2;
+										}
+								</script>
+							</code></pre>
+						</div>
+					</section>
+					<section id="slide23.2" class="twoView">
+						<h3 class="title">Eigenleistung - Umfrage html/js</h3>
+						<div>
+							<pre class="left codeblock"><code data-trim data-line-numbers>
+								<script type="text/template">
+									<form id="umfrage">
+										<div id="umfragentext">Hey! Hier eine Kleine umfrage welche dir und deinen Klassenkameraden hilft uns diese Seite für euch zu Verbessern!</div><br>
+										<label for="umfrageKlasse">In welcher Klasse bist du Gerade?</label><br>
+										<input type="text" id="umfrageKlasse" class="umfrage" name="umfrageKlasse"><br>
+										<label for="umfrageThemen">*Was ist dein Grösstes Hassthema in Mathematik momentan?</label><br>
+										<input type="text" id="umfrageThemen" class="umfrage" name="umfrageThemen" required><br><br>
+										<input type="submit" value="Absenden" onclick="umfrageAbsenden()">
+									</form>
+								</script>
+							</code></pre>
+							<pre class="right"><code data-trim data-line-numbers>
+								<script type="text/template">
+									function umfrageAbsenden() {
+										var requiredFields = document.querySelectorAll(".umfrage[required]");
+										var isValid = true;
+										
+										for (var i = 0; i < requiredFields.length; i++) {
+											if (requiredFields[i].value === "") {
+											isValid = false;
+											break;
+											}
+										}
+								</script>
+							</code></pre>
+						</div>
+					</section>
+				</section>
+
+
+
+				<section class="chapter center" id="slide24">
+					<h2>FAQ Time!</h2>
+				</section>
+
+
+
+				<section id="slide25" class="center">
+					<h2>Vielen Dank fuer ihr Zuhoeren!</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				controls: false,
+				progress: false,
+				center: false,
+				navigationMode: "linear",
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
